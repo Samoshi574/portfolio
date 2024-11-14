@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png.jpeg" alt="Logo" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Website Designer</p>
+                <h1>Hi, I'm <span>Sheril</span><br>From Sri Lanka</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png.jpeg" alt="User Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I’m Sheril, a passionate web designer with a knack for creating visually stunning and user-friendly websites. With 5 years of experience in the industry, I specialize in crafting bespoke designs that not only look great but also provide an exceptional user experience.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Designing Web/App interfaces</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2020 - 2024</span><br>UI/UX Design Executive at Dialog Pvt. Ltd.</li>
+                            <li><span>2019 - 2021</span><br>Project Lead at SLT Ltd.</li>
+                            <li><span>2021 - Current</span><br>Software Engineering Degree at SLTC University</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - 2024</span><br>UI/UX Design Executive at Dialog Pvt. Ltd.</li>
+                            <li><span>2022</span><br>Project from SLT Ltd.</li>
+                            <li><span>2020</span><br>BSc from SLTC University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Graphic Design</h2>
+                    <p>I provide custom graphic design services to enhance your website’s visual appeal, including logos, banners, and other digital assets.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Custom Website Design</h2>
+                    <p>I create visually appealing and user-friendly websites tailored to your brand’s unique identity. My designs are responsive, ensuring a seamless experience across all devices.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Content Management System</h2>
+                    <p>I specialize in CMS integration, allowing you to easily manage and update your website content without needing technical expertise.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png.jpeg" alt="Social Media App">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Start with wireframes to map out the app’s structure. Use tools like Figma or Sketch to create high-fidelity mockups.</p>
+                        <a href="#">Explore</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png.jpeg" alt="Music App">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to talented people around the world. Download it from the Play Store.</p>
+                        <a href="#">Explore</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/OIP.jpeg" alt="Online Shopping App">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Connects you to talented people around the world. Download it from the Play Store.</p>
+                        <a href="#">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>Email: sheril9@gmail.com</p>
+                    <p>Phone: 0705744253</p>
+                </div>
+                <a href="#" class="btn btn2">Download CV</a>
+            </div>
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Sheril.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript to Handle Tabs -->
+    <script>
+        function openTab(tabname) {
+            const tablinks = document.getElementsByClassName("tab-links");
+            const tabcontents = document.getElementsByClassName("tab-contents");
+
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            document.getElementById(tabname).classList.add("active-tab");
+            event.currentTarget.classList.add("active-link");
+        }
+    </script>
+</body>
+</html>
